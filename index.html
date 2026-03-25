@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Reconhecimento de Placas</title>
-
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image"></script>
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reconhecimento de Imagens - Seu Projeto</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.3/dist/teachablemachine-image.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <h1>🔍 Classificador de Imagens com Teachable Machine</h1>
 
-<h1>Reconhecimento de Placas de Trânsito 🚦</h1>
+  <div class="container">
+    <!-- Upload de imagem -->
+    <section>
+      <h2>Upload de Imagem</h2>
+      <input type="file" id="fileInput" accept="image/*">
+      <div id="preview"></div>
+      <button onclick="predictFromUpload()">Classificar Imagem</button>
+    </section>
 
-<button onclick="init()">Iniciar câmera</button>
+    <!-- Webcam -->
+    <section>
+      <h2>Webcam ao vivo</h2>
+      <button onclick="initWebcam()">Ligar Webcam</button>
+      <button onclick="stopWebcam()">Desligar</button>
+      <div id="webcam-container"></div>
+      <div id="label-container"></div>
+    </section>
+  </div>
 
-<div id="webcam-container"></div>
-<div id="label-container"></div>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
