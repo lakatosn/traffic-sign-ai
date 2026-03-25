@@ -1,6 +1,6 @@
 # 🚦 Reconhecimento de Placas de Trânsito com IA
 
-Projeto desenvolvido para a disciplina de **Fundamentos de Robótica**.
+Projeto desenvolvido para a disciplina de **Robótica**.
 
 O sistema utiliza um modelo de Inteligência Artificial treinado no **Teachable Machine** e implementado em uma aplicação web com **TensorFlow.js**, capaz de reconhecer placas de trânsito em tempo real por meio de imagens ou webcam.
 
