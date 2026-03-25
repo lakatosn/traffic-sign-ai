@@ -51,7 +51,7 @@ traffic-sign-ai/
 ├── index.html
 ├── style.css
 ├── script.js
-├── model/
+├── my-model/
 │   ├── model.json
 │   ├── metadata.json
 │   └── weights.bin
